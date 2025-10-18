@@ -1,0 +1,94 @@
+{
+  "project_name": "san-diego-talents-collective",
+  "created_date": "2025-10-17",
+  "questionnaire_answers": {
+    "business_basics": {
+      "business_name": "San Diego Talents Collective",
+      "industry": "Creative Community Marketplace / Local Services",
+      "description": "Connecting National City, Chula Vista, and San Diego residents with talented local artisans and service providers"
+    },
+    "website_purpose": {
+      "primary_goal": "Lead generation (collect emails/contacts)",
+      "target_audience": "General public in National City, Chula Vista, and San Diego, CA",
+      "key_actions": [
+        "Contact us",
+        "Text for booking",
+        "Browse services"
+      ]
+    },
+    "features_functionality": {
+      "core_features": [
+        "Contact form",
+        "Direct text messaging",
+        "Individual talent showcases",
+        "Pricing displays",
+        "Limited time sale section"
+      ],
+      "third_party_integrations": [
+        "Google Fonts",
+        "Unsplash (for images)"
+      ]
+    },
+    "design_branding": {
+      "brand_colors": {
+        "primary": "#FF6B35",
+        "secondary": "#004E89",
+        "accent": "#F7931E"
+      },
+      "design_style": "Professional, trustworthy, warm, San Diego vibe",
+      "design_inspirations": "San Diego sunset and coastal aesthetics"
+    },
+    "content_structure": {
+      "main_pages": [
+        "Home",
+        "Our Talents",
+        "How It Works",
+        "Contact"
+      ],
+      "content_ready": "Generated with placeholders"
+    },
+    "technical_requirements": {
+      "cms_needed": false,
+      "expected_traffic": "Just starting (< 1K visitors/month)",
+      "mobile_priority": "Equal priority (responsive design)",
+      "seo_priority": "Nice to have (focus on social media and word-of-mouth)"
+    }
+  },
+  "talents": [
+    {
+      "name": "David",
+      "services": ["Paintings", "Woodwork", "Planting"],
+      "pricing": "Starting at $50-75"
+    },
+    {
+      "name": "Brown",
+      "services": ["Scented Candles", "Seasonal Candles"],
+      "pricing": "Starting at $15"
+    },
+    {
+      "name": "Ernest",
+      "services": ["Handyman Services", "Landscaping"],
+      "pricing": "Starting at $50-60/hour"
+    },
+    {
+      "name": "Home Cooked Meals",
+      "services": ["Filipino Cuisine", "Japanese Cuisine", "Fusion", "Baked Goods"],
+      "pricing": "Starting at $25"
+    },
+    {
+      "name": "Limited Time Sale",
+      "services": ["Random items"],
+      "pricing": "Varies"
+    }
+  ],
+  "contact": {
+    "phone": "(619) 621-8962",
+    "method": "Text preferred",
+    "safety_note": "All meetings at police station",
+    "service_area": "National City, Chula Vista, San Diego, CA"
+  },
+  "template_used": "landing-page",
+  "deployment_platform": "vercel",
+  "repository": "https://github.com/eBruno-Sec/web-app-generator",
+  "project_folder": "projects/san-diego-talents-collective"
+}
