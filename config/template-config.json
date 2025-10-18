@@ -1,0 +1,162 @@
+{
+  "template_mappings": {
+    "description": "Maps user requirements to appropriate templates",
+    "rules": [
+      {
+        "template": "landing-page",
+        "conditions": {
+          "primary_goal": [
+            "Lead generation (collect emails/contacts)",
+            "Information/blog"
+          ],
+          "core_features_exclude": [
+            "User authentication (login/signup)",
+            "Database (store user data)",
+            "Payment processing"
+          ]
+        },
+        "best_for": "Simple marketing sites, landing pages, informational websites"
+      },
+      {
+        "template": "react-app",
+        "conditions": {
+          "primary_goal": [
+            "Web app/tool",
+            "Portfolio/showcase"
+          ],
+          "core_features_include_any": [
+            "User authentication (login/signup)",
+            "Database (store user data)",
+            "Search functionality",
+            "Real-time features (chat, notifications)"
+          ]
+        },
+        "best_for": "Interactive web applications, dashboards, portfolios with dynamic content"
+      },
+      {
+        "template": "ecommerce",
+        "conditions": {
+          "primary_goal": ["E-commerce (sell products)"],
+          "core_features_include": [
+            "Payment processing"
+          ]
+        },
+        "best_for": "Online stores, product catalogs, shopping carts"
+      },
+      {
+        "template": "saas-app",
+        "conditions": {
+          "primary_goal": ["Web app/tool"],
+          "core_features_include_any": [
+            "User authentication (login/signup)",
+            "Database (store user data)",
+            "Admin dashboard"
+          ]
+        },
+        "best_for": "SaaS products, subscription services, web applications with user accounts"
+      }
+    ]
+  },
+  "variable_mappings": {
+    "description": "Maps questionnaire answers to template variables",
+    "mappings": {
+      "BUSINESS_NAME": "questionnaire.business_basics.business_name",
+      "TAGLINE": "questionnaire.business_basics.description",
+      "INDUSTRY": "questionnaire.business_basics.industry",
+      "PRIMARY_COLOR": "questionnaire.design_branding.brand_colors.primary",
+      "SECONDARY_COLOR": "questionnaire.design_branding.brand_colors.secondary",
+      "HERO_TITLE": "generated from business_name and description",
+      "HERO_SUBTITLE": "questionnaire.business_basics.description",
+      "CTA_PRIMARY": "generated from primary_goal",
+      "CTA_SECONDARY": "default: 'Learn More'",
+      "FEATURES_TITLE": "default: 'Why Choose Us' or custom based on industry",
+      "NAV_LINKS": "generated from questionnaire.content_structure.main_pages",
+      "FEATURE_CARDS": "generated from questionnaire.features_functionality.core_features"
+    }
+  },
+  "color_palettes": {
+    "description": "Suggested color schemes by industry and style",
+    "palettes": {
+      "tech": {
+        "modern": {
+          "primary": "#3B82F6",
+          "secondary": "#8B5CF6"
+        },
+        "bold": {
+          "primary": "#7C3AED",
+          "secondary": "#EC4899"
+        }
+      },
+      "restaurant": {
+        "warm": {
+          "primary": "#F59E0B",
+          "secondary": "#EF4444"
+        },
+        "elegant": {
+          "primary": "#1F2937",
+          "secondary": "#D97706"
+        }
+      },
+      "healthcare": {
+        "professional": {
+          "primary": "#0EA5E9",
+          "secondary": "#10B981"
+        },
+        "calming": {
+          "primary": "#06B6D4",
+          "secondary": "#8B5CF6"
+        }
+      },
+      "ecommerce": {
+        "vibrant": {
+          "primary": "#EC4899",
+          "secondary": "#F59E0B"
+        },
+        "luxury": {
+          "primary": "#1F2937",
+          "secondary": "#D4AF37"
+        }
+      },
+      "default": {
+        "modern": {
+          "primary": "#3B82F6",
+          "secondary": "#10B981"
+        }
+      }
+    }
+  },
+  "deployment_configs": {
+    "stackblitz": {
+      "html": {
+        "template": "html",
+        "files": ["index.html", "styles.css", "script.js"]
+      },
+      "react": {
+        "template": "react",
+        "files": ["App.jsx", "index.jsx", "styles.css"]
+      }
+    },
+    "vercel": {
+      "html": {
+        "framework": "other",
+        "buildCommand": "",
+        "outputDirectory": "."
+      },
+      "react": {
+        "framework": "vite",
+        "buildCommand": "npm run build",
+        "outputDirectory": "dist"
+      }
+    },
+    "netlify": {
+      "html": {
+        "buildCommand": "",
+        "publishDirectory": "."
+      },
+      "react": {
+        "buildCommand": "npm run build",
+        "publishDirectory": "dist"
+      }
+    }
+  }
+}
