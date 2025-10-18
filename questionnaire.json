@@ -1,0 +1,241 @@
+{
+  "version": "1.0",
+  "description": "Standardized questionnaire for full-stack web application development",
+  "sections": [
+    {
+      "id": "business_basics",
+      "title": "Business Basics",
+      "questions": [
+        {
+          "id": "business_name",
+          "question": "What's the business/project name?",
+          "type": "text",
+          "required": true
+        },
+        {
+          "id": "industry",
+          "question": "What industry/niche?",
+          "type": "text",
+          "examples": ["restaurant", "e-commerce", "portfolio", "SaaS", "blog", "real estate", "healthcare"],
+          "required": true
+        },
+        {
+          "id": "description",
+          "question": "One-sentence description of what the business does:",
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "website_purpose",
+      "title": "Website Purpose & Goals",
+      "questions": [
+        {
+          "id": "primary_goal",
+          "question": "Primary goal of the website?",
+          "type": "select",
+          "options": [
+            "Lead generation (collect emails/contacts)",
+            "E-commerce (sell products)",
+            "Portfolio/showcase",
+            "Information/blog",
+            "Web app/tool",
+            "Booking/scheduling",
+            "Community/forum",
+            "Other"
+          ],
+          "required": true
+        },
+        {
+          "id": "target_audience",
+          "question": "Target audience?",
+          "type": "text",
+          "placeholder": "e.g., age range, profession, interests",
+          "required": true
+        },
+        {
+          "id": "key_actions",
+          "question": "Key actions you want visitors to take?",
+          "type": "multi-select",
+          "options": [
+            "Buy products",
+            "Sign up/register",
+            "Contact us",
+            "Read content",
+            "Download resources",
+            "Book appointments",
+            "Subscribe to newsletter"
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "features_functionality",
+      "title": "Features & Functionality",
+      "questions": [
+        {
+          "id": "core_features",
+          "question": "Core features needed?",
+          "type": "multi-select",
+          "options": [
+            "Contact form",
+            "User authentication (login/signup)",
+            "Database (store user data)",
+            "Payment processing",
+            "Blog/CMS",
+            "Admin dashboard",
+            "Search functionality",
+            "User profiles",
+            "Comments/reviews",
+            "Real-time features (chat, notifications)",
+            "File uploads",
+            "API integration",
+            "Multi-language support"
+          ],
+          "required": true
+        },
+        {
+          "id": "third_party_integrations",
+          "question": "Any third-party integrations needed?",
+          "type": "multi-select",
+          "options": [
+            "Google Analytics",
+            "Social media feeds",
+            "Email marketing (Mailchimp, etc.)",
+            "Payment gateways (Stripe, PayPal)",
+            "Calendar (Google Calendar)",
+            "Maps (Google Maps)",
+            "Live chat",
+            "None"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "design_branding",
+      "title": "Design & Branding",
+      "questions": [
+        {
+          "id": "brand_colors",
+          "question": "Brand colors?",
+          "type": "text",
+          "placeholder": "e.g., Primary: #FF6B6B, Secondary: #4ECDC4 (or 'suggest for me')",
+          "required": false
+        },
+        {
+          "id": "design_style",
+          "question": "Design style preference?",
+          "type": "select",
+          "options": [
+            "Modern/minimalist",
+            "Bold/vibrant",
+            "Professional/corporate",
+            "Creative/artistic",
+            "Dark mode",
+            "Playful/fun",
+            "Elegant/luxury",
+            "You decide"
+          ],
+          "required": true
+        },
+        {
+          "id": "design_inspirations",
+          "question": "Any specific design inspirations?",
+          "type": "text",
+          "placeholder": "URLs of websites you like, or 'none'",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "content_structure",
+      "title": "Content Structure",
+      "questions": [
+        {
+          "id": "main_pages",
+          "question": "Main pages needed?",
+          "type": "multi-select",
+          "options": [
+            "Home",
+            "About",
+            "Services/Products",
+            "Portfolio/Gallery",
+            "Blog",
+            "Contact",
+            "FAQ",
+            "Pricing",
+            "Team",
+            "Testimonials"
+          ],
+          "required": true
+        },
+        {
+          "id": "content_ready",
+          "question": "Do you have content ready?",
+          "type": "select",
+          "options": [
+            "Yes, I'll provide text and images",
+            "Use placeholders for now",
+            "Generate sample content for me"
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "technical_requirements",
+      "title": "Technical Requirements",
+      "questions": [
+        {
+          "id": "cms_needed",
+          "question": "Need a CMS (content management system to edit without coding)?",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "id": "expected_traffic",
+          "question": "Expected traffic/scale?",
+          "type": "select",
+          "options": [
+            "Just starting (< 1K visitors/month)",
+            "Small (1K-10K visitors/month)",
+            "Medium (10K-100K visitors/month)",
+            "Large (100K+ visitors/month)"
+          ],
+          "required": true
+        },
+        {
+          "id": "mobile_priority",
+          "question": "Mobile responsiveness priority?",
+          "type": "select",
+          "options": [
+            "Mobile-first (most traffic from mobile)",
+            "Desktop-first (most traffic from desktop)",
+            "Equal priority"
+          ],
+          "required": true
+        },
+        {
+          "id": "seo_priority",
+          "question": "SEO (Search Engine Optimization) priority?",
+          "type": "select",
+          "options": [
+            "Critical (need to rank on Google)",
+            "Important",
+            "Nice to have",
+            "Not a priority"
+          ],
+          "required": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "created": "2025-10-17",
+    "last_updated": "2025-10-17",
+    "version_notes": "Initial comprehensive questionnaire covering all aspects of web app development"
+  }
+}
