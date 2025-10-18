@@ -1,108 +1,93 @@
 # San Diego Talents Collective
 
-🎨 **Connecting National City, Chula Vista, and San Diego residents with talented local artisans and service providers**
+## Project Overview
+A community marketplace website connecting National City, Chula Vista, and San Diego residents with talented local artisans and service providers.
 
-## 🌟 Project Overview
+## Featured Talents
 
-A community-focused marketplace website showcasing local talents and services in the San Diego area. This platform helps connect talented individuals with customers while building community awareness.
-
-## 👥 Featured Talents
-
-### David - Fine Arts
-- Custom paintings
-- Beautiful woodwork
-- Expert planting services
+### David - Fine Arts & Woodwork
+- Custom Paintings
+- Woodwork & Carpentry
+- Garden Planting Design
 - **Starting at:** $50-75
 
-### Brown - Candle Artisan
-- Handcrafted scented candles
-- Seasonal designs
-- Custom orders
+### Brown - Handcrafted Candles
+- Scented Candles
+- Seasonal Collections
+- Custom Fragrances
 - **Starting at:** $15
 
-### Ernest - Handyman Expert
-- Professional handyman services
-- Landscaping
-- Home repairs
+### Ernest - Handyman & Landscaping
+- General Repairs
+- Landscaping Services
+- Home Maintenance
 - **Starting at:** $50-60/hour
 
 ### Home Cooked Meals
-- Authentic Filipino cuisine
-- Japanese dishes
-- Fusion meals and baked goods
+- Authentic Filipino Dishes
+- Japanese Cuisine
+- Fusion Creations & Baked Goods
 - **Starting at:** $25
 
 ### Limited Time Sale
 - Unique finds and special items
-- Varies by availability
+- Available while supplies last
 
-## 🎯 Website Features
+## Contact Information
+- **Phone/Text:** (619) 621-8962
+- **Service Area:** National City, Chula Vista, San Diego, CA
+- **Safe Meetups:** National City Police Station
 
-✅ Responsive design (mobile & desktop)
-✅ Individual talent showcase cards
-✅ Direct contact via text: (619) 621-8962
-✅ Contact form for inquiries
-✅ Limited time sale section
-✅ Safety-first approach (meetings at police station)
-✅ Beautiful San Diego-themed design
+## Website Features
+- Responsive design (mobile & desktop)
+- Individual talent showcase cards
+- Direct SMS integration for inquiries
+- Contact form
+- Safety-first approach (police station meetups)
+- Limited time sale section
+- Smooth scrolling navigation
+- Animated content on scroll
 
-## 🎨 Design
+## Design
+- **Primary Color:** #FF6B35 (Sunset Orange)
+- **Secondary Color:** #004E89 (Ocean Blue)
+- **Accent Color:** #F7931E (Golden Hour)
+- **Style:** Modern, warm, professional with San Diego coastal vibes
 
-**Color Palette:**
-- Primary: #FF6B35 (Sunset Orange)
-- Secondary: #004E89 (Pacific Blue)
-- Accent: #F7931E (Golden Hour)
+## Technology Stack
+- HTML5
+- CSS3 (Responsive Grid & Flexbox)
+- Vanilla JavaScript
+- No frameworks required
 
-**Style:** Modern, warm, professional with San Diego coastal vibes
+## Deployment
+This website is ready to deploy on:
+- Vercel (Recommended)
+- Netlify
+- GitHub Pages
+- Any static hosting service
 
-## 📱 Contact Information
+## Business Model
+- Lead generation for local talents
+- Commission-based profit sharing
+- Community awareness building
+- Social media & word-of-mouth promotion
 
-**Phone:** (619) 621-8962 (Text preferred)
-**Service Area:** National City, Chula Vista, San Diego, CA
-**Safety:** All meetings arranged at local police station
+## Getting Started
+1. All files are in the `projects/san-diego-talents-collective/` folder
+2. Open `index.html` in a browser to preview locally
+3. Deploy to Vercel for live hosting
 
-## 🛠️ Technology Stack
-
-- **HTML5** - Semantic markup
-- **CSS3** - Responsive design with flexbox/grid
-- **JavaScript** - Interactive features
-- **Google Fonts** - Poppins typography
-- **Unsplash** - High-quality placeholder images
-
-## 📋 Pages
-
-1. **Home** - Hero section with call-to-action
-2. **Our Talents** - Showcase of all service providers
-3. **How It Works** - 4-step booking process
-4. **Contact** - Contact form and information
-
-## 🚀 Deployment
-
-This website is deployed on Vercel with automatic GitHub integration.
-
-**Live URL:** Coming soon...
-
-## 📊 Project Goals
-
-1. Generate leads for local talents
-2. Build community awareness
-3. Provide easy contact method (text-based)
-4. Ensure safe transaction process
-5. Showcase National City's talented residents
-
-## 🔄 Future Enhancements
-
-- [ ] Add online booking system
-- [ ] Integrate calendar for availability
-- [ ] Add customer testimonials section
-- [ ] Create individual portfolio pages
-- [ ] Add email newsletter signup
-- [ ] Implement image gallery for each talent
-
-## 📄 License
-
-© 2025 San Diego Talents Collective. All rights reserved.
+## Next Steps
+- Deploy to Vercel
+- Share URL on social media
+- Print flyers with QR code
+- Gather real photos from talents
+- Add testimonials section
+- Track leads and conversions
 
 ---
 
-**Built with ❤️ for the National City community**
+**Built with ❤️ for the San Diego community**
+
+Generated: October 17, 2025

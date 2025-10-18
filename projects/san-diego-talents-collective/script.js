@@ -14,96 +14,73 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission handler
-function handleSubmit(event) {
-    event.preventDefault();
-    
-    // Get form data
-    const form = event.target;
-    const formData = new FormData(form);
-    
-    // Show success message
-    alert('Thank you for your message! We\'ll contact you soon via text at (619) 621-8962.');
-    
-    // Reset form
-    form.reset();
-    
-    // In a production environment, you would send this data to a backend service
-    // For now, we're just showing a confirmation message
-    
-    return false;
+// Contact form handling
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(contactForm);
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const interest = formData.get('interest');
+        const message = formData.get('message');
+        
+        // Create SMS message
+        const smsBody = `New inquiry from ${name} (${email})\nInterested in: ${interest}\nMessage: ${message}`;
+        const smsLink = `sms:6196218962?body=${encodeURIComponent(smsBody)}`;
+        
+        // Open SMS app
+        window.location.href = smsLink;
+        
+        // Reset form
+        contactForm.reset();
+        
+        // Show confirmation
+        alert('Opening your messaging app! We\'ll get back to you soon.');
+    });
 }
 
-// Add active state to navigation on scroll
-window.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-menu a');
-    
-    let current = '';
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (scrollY >= (sectionTop - 200)) {
-            current = section.getAttribute('id');
-        }
-    });
-    
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-            link.classList.add('active');
-        }
-    });
-});
-
-// Add scroll-to-top button functionality
-const scrollTopBtn = document.createElement('button');
-scrollTopBtn.innerHTML = '↑';
-scrollTopBtn.className = 'scroll-top-btn';
-scrollTopBtn.style.cssText = `
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: var(--primary-color);
-    color: white;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s;
-`;
-
-document.body.appendChild(scrollTopBtn);
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-        scrollTopBtn.style.display = 'block';
+// Add scroll effect to navbar
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
     } else {
-        scrollTopBtn.style.display = 'none';
+        navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
     }
 });
 
-scrollTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+// Animate elements on scroll
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
     });
+}, observerOptions);
+
+// Observe talent cards
+document.querySelectorAll('.talent-card').forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = 'all 0.6s ease-out';
+    observer.observe(card);
 });
 
-scrollTopBtn.addEventListener('mouseenter', () => {
-    scrollTopBtn.style.transform = 'translateY(-5px)';
+// Observe steps
+document.querySelectorAll('.step').forEach(step => {
+    step.style.opacity = '0';
+    step.style.transform = 'translateY(20px)';
+    step.style.transition = 'all 0.6s ease-out';
+    observer.observe(step);
 });
 
-scrollTopBtn.addEventListener('mouseleave', () => {
-    scrollTopBtn.style.transform = 'translateY(0)';
-});
-
-// Console log for developers
-console.log('%c🎨 San Diego Talents Collective', 'color: #FF6B35; font-size: 20px; font-weight: bold;');
-console.log('%cSupporting local talent in National City, Chula Vista, and San Diego!', 'color: #004E89; font-size: 14px;');
+console.log('San Diego Talents Collective - Website loaded successfully!');
