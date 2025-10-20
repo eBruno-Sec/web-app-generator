@@ -26,7 +26,7 @@ Do you have a business name? "Maze Kusina", what do You think, she likes to eat,
 
 Content:
 Do you have photos of the food/items, or should I use placeholders you can replace later? Just use placeholders from free picures websites.
-Any specific info you want on the site? (story, menu/product list, pricing, etc.) Story, She's from Philippines, went to Japan when she was 12 or something. We were highschool classmates in Philippines and we were not even lovers. now we live in National City, CA with two kids and she brought her talents from PH, Japan, to National City, CA
+Any specific info you want on the site? (story, menu/product list, pricing, etc.) Story, She's from Philippines, went to Japan when she was 14 or something. We were highschool classmates in Philippines and we were not even lovers. now we live in National City, CA with two kids and she brought her talents from PH, Japan, to National City, CA
 
 ...
 
@@ -42,4 +42,5 @@ Do you want pricing shown, or "Contact for pricing"? Contact for pricing, maybe 
 ---
 
 Tote bags are from San Diego Local Stores
+
 Food types, keep it general for now.
